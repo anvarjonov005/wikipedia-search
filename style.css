@@ -1,0 +1,111 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp8188619.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.content {
+    background: #333333cc;
+}
+
+.fonts {
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.searchInput {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    width: 50vh;
+}
+
+.card {
+    margin: 10px 0;
+    box-shadow: #424242 1px 1px 10px 3px;
+}
+
+.searchButton {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cardTitle>a {
+    font-weight: 700;
+    color: #000 !important;
+}
+
+.cardTitle>a:hover {
+    color: coral !important;
+    transition: all .5s ease;
+}
+
+.cardLink {
+    background: #2e668c6c;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: #344a7ad8 5px solid;
+}
+
+.cardSnippet {
+    font-family: monospace;
+    font-size: 2vh;
+}
+
+@media (max-width: 750px) {
+    .fonts {
+        font-size: 3vh;
+        margin: 0 0 2vh 0;
+    }
+
+    .divs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .fonts {
+        font-size: 3vh
+    }
+
+    .searchInput {
+        width: auto;
+        height: 4vh;
+        font-size: 0.9rem;
+        padding-top: 0.5vh;
+    }
+
+    .searchButton {
+        height: 4vh;
+        font-size: 0.9rem;
+        padding-top: 0.5vh;
+    }
+    .card{
+        width: 80%;
+    }
+    .results{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardTitle>a{
+        font-size: 2.5vh;
+    }
+    .cardLink{
+        font-size: 2vh;
+    }
+    .cardSnippet{
+        font-size: 1.8vh;
+    }
+}
